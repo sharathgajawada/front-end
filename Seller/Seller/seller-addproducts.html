@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Home</title>
+</head>
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <img src="./logo.png" alt="image" class="nav__logo">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               
+               <li><a href="#" class="nav__link">Add Product</a></li>
+               <li><a href="verify.html" class="nav__link">Product-Verification</a></li>
+               
+            </ul>
+            <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+         </div>
+         <div class="nav__actions">
+            <div class="customer-details">
+               <p> Name: John Doe</p>
+               <p> Seller ID: 12345</p>
+            </div>
+            <a href="#" class="nav__login" id="login-btn">
+               <i class="ri-user-line"></i>
+            </a>
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+         </div>
+      </nav>
+   </header>
+
+   <main class="main">
+      <div class="add-product-form">
+         <h2>Add Product</h2>
+         <form action="#" method="post">
+            <label for="manufacturer-id">Manufacturer ID:</label>
+            <input type="text" id="manufacturer-id" name="manufacturer-id" required>
+
+            <label for="product-sn">Product SN:</label>
+            <input type="text" id="product-sn" name="product-sn" required>
+
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-brand">Product Brand:</label>
+            <input type="text" id="product-brand" name="product-brand" required>
+
+            <label for="product-price">Product Price:</label>
+            <input type="text" id="product-price" name="product-price" required>
+
+            <button type="submit">Add Product</button>
+         </form>
+      </div>
+
+      <!-- QR Code Section -->
+      <div class="qr-code-section">
+         <h2>QR Code</h2>
+         <a href="./qr.png" download="qr.png">
+            <img src="./qr.png" alt="QR Code" class="qr-code-img">
+            <button class="download-qr-btn">Download QR Code</button>
+         </a>
+      </div>
+   </main>
+
+   <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Verify Product</title>
+</head>
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <img src="./logo.png" alt="image" class="nav__logo">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="addproducts.html" class="nav__link">Add Product</a></li>
+               <li><a href="#" class="nav__link">Product-Verification</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+         </div>
+         <div class="nav__actions">
+            <div class="customer-details">
+               <p>Name: John Doe</p>
+               <p>Seller ID: 12345</p>
+            </div>
+            <a href="#" class="nav__login" id="login-btn">
+               <i class="ri-user-line"></i>
+            </a>
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+         </div>
+      </nav>
+   </header>
+
+   <main class="main">
+      <div class="verify-product">
+         <h2 class="verify-product-heading">Verify Product</h2>
+
+         <!-- Image Upload and Camera Scan -->
+         <div class="upload-scan-options">
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="scan-camera">Scan Through Camera</button>
+         </div>
+
+         <!-- Verification Form -->
+         <form class="verification-form">
+            <button type="button" id="verify-product-btn">Verify Product</button>
+            <div class="form-row">
+               <label for="product-sn">Manufacturer-id:</label>
+               </div>
+            <div class="form-row">
+               <label for="aadhar-number">Manufacturer-name:</label>
+               </div>
+               <div class="form-row">
+                  <label for="aadhar-number">Other-Sellers:</label>
+                  </div>
+            </form>
+
+         <!-- Product Status Table -->
+         <div class="product-status">
+            <h3>Product Status</h3>
+            <table>
+               <tr>
+                  <th>Product Verification Status</th>
+               </tr>
+               <tr>
+                  <td id="verification-status">Genuine Product</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </main>
+
+   <script src="./main.js"></script>
+</body>
+</html>

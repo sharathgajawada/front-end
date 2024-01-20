@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Home</title>
+</head>
+<body>
+
+
+   <header class="header" id="header">
+      <nav class="nav container">
+         <img src="./logo.png" alt="image" class="nav__logo">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#" class="nav__link">Purchase-History</a></li>
+               <li><a href="verify.html" class="nav__link">Product-Verification</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+         </div>
+         <div class="nav__actions">
+            <div class="customer-details">
+               <p>Name: John Doe</p>
+               <p>Customer ID: 12345</p>
+            </div>
+            <a href="#" class="nav__login" id="login-btn">
+               <i class="ri-user-line"></i>
+            </a>
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+         </div>
+      </nav>
+   </header>
+
+   <main class="main">
+      <!-- Product History Heading -->
+      <h2 class="product-history-heading">Product History</h2>
+
+      <!-- Purchase History Table -->
+      <table class="purchase-history">
+         <thead>
+            <tr>
+               <th>S.No</th>
+               <th>Product ID</th>
+               <th>Product Name</th>
+               <th>Image</th>
+               <!-- Add more columns as needed -->
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>1</td>
+               <td>1001</td>
+               <td>Product A</td>
+               <td><button>View</button></td>
+               <!-- Add more rows as needed -->
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>1002</td>
+               <td>Product B</td>
+               <td><button>View</button></td>
+               <!-- Add more rows as needed -->
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>1003</td>
+               <td>Product C</td>
+               <td><button>View</button></td>
+               <!-- Add more rows as needed -->
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>1004</td>
+               <td>Product D</td>
+               <td><button>View</button></td>
+               <!-- Add more rows as needed -->
+            </tr>
+            
+            <!-- Add more rows as needed -->
+         </tbody>
+      </table>
+   </main>
+
+   <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, input, button {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+    display: flex;
+ }
+
+ .add-product-form {
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .add-product-form h2 {
+    color: #14097f;
+    margin-bottom: 20px;
+ }
+
+ .add-product-form label {
+    display: block;
+    color: #14097f;
+    margin-top: 10px;
+ }
+
+ .add-product-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+ }
+
+ .add-product-form button {
+    padding: 10px;
+    background-color: #fd7d72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+
+ .qr-code-section {
+   
+    text-align: center;
+   
+    margin-top: 170px;
+    margin-left: 250px;
+ }
+
+ .qr-code-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+ }
+
+ .download-qr-btn {
+    padding: 10px;
+    background-color: #fd7d72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .product-history-heading {
+  margin-top: -300px;
+  margin-left: 40%;
+  padding: 0;
+  position:fixed;
+  color: #330202;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+
+.purchase-history {
+  /* margin-top: 170px; */
+  margin-left: 5%;
+  margin-right: 2%;
+  width: 100%;
+  height: 10px;
+  border-collapse: collapse;
+  color: #14097f;
+}
+
+.purchase-history th, .purchase-history td {
+  padding: 10px;
+  border: 1px solid #14097f;
+}
+
+.purchase-history th {
+  background-color: #fd7d72;
+  color: #fff;
+}
+
+.purchase-history tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.purchase-history tbody tr:hover {
+  background-color: #d8e4ff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+
+.product-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-description {
+  margin-top: 10px;
+}
+.main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fd7d72;
+  box-shadow: 0 2px 16px hsla(227, 100%, 4%, 0.15);
+  z-index: 100;
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: #14097f;
+  width: 200px;
+  left:-2%;
+
+  position: relative;
+  transition: color 0.1s;
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nav__toggle, .nav__close {
+  font-size: 1.25rem;
+  color: #14097f;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+:is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
+  color: #007bff;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #fd7d72;
+    box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+    width: 100%;
+    padding-block: 4.5rem 4rem;
+    transition: top 0.4s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  text-align: center;
+}
+
+.nav__link {
+  color: #14097f;
+  font-weight: 600;
+  transition: color 0.4s;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+}
+
+.show-menu {
+  top: 0;
+}
+
+@media screen and (min-width: 1023px) {
+  .nav {
+    height: calc(3.5rem + 2rem);
+    column-gap: 3rem;
+  }
+  .nav__close, .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    margin-left: auto;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+}
